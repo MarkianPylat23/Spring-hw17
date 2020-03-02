@@ -1,6 +1,6 @@
 package com.company.hw17.app.runner;
 
-import com.company.hw17.service.Clock;
+import com.company.hw17.service.DateTimeChecker;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class JavaConfig {
 
     @Bean
-    public Clock clock() {
-        return new Clock();
+    public DateTimeChecker clock() {
+        return new DateTimeChecker();
     }
 }
